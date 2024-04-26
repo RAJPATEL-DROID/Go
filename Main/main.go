@@ -1,7 +1,7 @@
 package main
 
 import (
-	"example.com/go/practice/Basics"
+	"example.com/go/practice/DataTypes"
 	"fmt"
 )
 
@@ -23,17 +23,26 @@ func main() {
 
 	//Basics.ConstantDemo()
 
-	Basics.LabelsDemo()
+	//Basics.LabelsDemo()
+
+	//DataTypes.RuneDemo()
+
+	//DataTypes.StringsPack()
 
 	//DataTypes.SliceDemo()
 
-	//DataTypes.MapDemo()
+	DataTypes.MapDemo()
 
 	//DataTypes.StructAndPtrDemo()
 
 	//DataTypes.Conversion()
 
 	//DataTypes.NamedTypes()
+
+	//Function.FuncDemo()
+
+	//Function.ClosureDemo()
+
 }
 
 func callChat() {
