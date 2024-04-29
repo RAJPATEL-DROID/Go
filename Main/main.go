@@ -1,7 +1,7 @@
 package main
 
 import (
-	"example.com/go/practice/DataTypes"
+	"example.com/go/practice/Concurrency"
 	"fmt"
 )
 
@@ -31,7 +31,7 @@ func main() {
 
 	//DataTypes.SliceDemo()
 
-	DataTypes.MapDemo()
+	//	DataTypes.MapDemo()
 
 	//DataTypes.StructAndPtrDemo()
 
@@ -39,10 +39,32 @@ func main() {
 
 	//DataTypes.NamedTypes()
 
+	//DataTypes.Practice()
+
+	//DataTypes.JsonDemo()
+
 	//Function.FuncDemo()
 
 	//Function.ClosureDemo()
 
+	//FileSystem.FileDemo()
+
+	//FileSystem.ReadFileDemo()
+
+	//OOP.RecieverMethods()
+
+	//OOP.InterfaceDemo()
+
+	//OOP.TypeAssertionAndTypeSwitchDemo()
+
+	//OOP.GenericDemo()
+
+	//PanicRecover.PanicDemo()
+
+	//Concurrency.RoutineDemo()
+
+	//Concurrency.ChannelDemo()
+	Concurrency.ChannelCommunication()
 }
 
 func callChat() {

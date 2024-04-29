@@ -17,4 +17,5 @@ func FuncDemo() {
 
 	fmt.Println(compute(hypot))
 	fmt.Println(compute(math.Pow))
+
 }
