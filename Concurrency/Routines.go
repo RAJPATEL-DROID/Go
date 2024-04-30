@@ -18,7 +18,8 @@ func f1(wg *sync.WaitGroup) {
 	fmt.Println("f1 execution finished")
 
 	wg.Done()
-	// (*wg).Done()
+	// wg.Done() -> panic :negative waitGroup counter
+	//(*wg).Done()
 }
 
 func f2() {
@@ -34,6 +35,15 @@ func f2() {
 }
 
 func RoutineDemo() {
+	fmt.Println("No. of CPUs:", runtime.NumCPU())
+
+	fmt.Println("No. of Goroutines:", runtime.NumGoroutine())
+
+	fmt.Println("OS:", runtime.GOOS)
+	fmt.Println("Arch:", runtime.GOARCH)
+
+	fmt.Println("GOMAXPROCS:", runtime.GOMAXPROCS(0))
+
 	fmt.Println("main execution started")
 
 	var wg sync.WaitGroup
@@ -45,6 +55,8 @@ func RoutineDemo() {
 	fmt.Println("No. of Goroutines:", runtime.NumGoroutine()) // => 2
 
 	f2()
+
+	wg.Wait()
 
 	wg.Wait()
 

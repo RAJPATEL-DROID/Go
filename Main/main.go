@@ -61,10 +61,27 @@ func main() {
 
 	//PanicRecover.PanicDemo()
 
+	//Concurrency.ConcurrencyPractice()
+
+	Concurrency.MapModification()
+
 	//Concurrency.RoutineDemo()
 
 	//Concurrency.ChannelDemo()
-	Concurrency.ChannelCommunication()
+
+	//Concurrency.ChannelCommunication()
+
+	//Concurrency.Unbuffered()
+
+	//Concurrency.BufferedChannel()
+
+	//Concurrency.Practice()
+
+	//Concurrency.BankDemo()
+
+	//Concurrency.SelectDemo()
+
+	//Concurrency.TimerDemo()
 }
 
 func callChat() {
