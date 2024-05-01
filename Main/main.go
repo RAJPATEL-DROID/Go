@@ -2,6 +2,7 @@ package main
 
 import (
 	"example.com/go/practice/Concurrency"
+	"example.com/go/practice/OOP"
 	"fmt"
 )
 
@@ -51,7 +52,7 @@ func main() {
 
 	//FileSystem.ReadFileDemo()
 
-	//OOP.RecieverMethods()
+	OOP.ReceiverMethods()
 
 	//OOP.InterfaceDemo()
 
@@ -63,7 +64,7 @@ func main() {
 
 	//Concurrency.ConcurrencyPractice()
 
-	Concurrency.MapModification()
+	//Concurrency.MapModification()
 
 	//Concurrency.RoutineDemo()
 
@@ -81,7 +82,8 @@ func main() {
 
 	//Concurrency.SelectDemo()
 
-	//Concurrency.TimerDemo()
+	Concurrency.TimerDemo()
+
 }
 
 func callChat() {

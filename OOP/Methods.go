@@ -33,7 +33,7 @@ func (c *car) changeCarDetails2(newBrand string, newPrice int) {
 	(*c).price = newPrice
 }
 
-func RecieverMethods() {
+func ReceiverMethods() {
 
 	// Hour() isthe reciever methods for Time data type
 	const day = 24 * time.Second
