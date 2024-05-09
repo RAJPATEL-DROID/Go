@@ -3,12 +3,12 @@ package Basics
 import "fmt"
 
 func ArrayExample() {
-	//var a [5]int8
-	//fmt.Println("emp: ", a)
+	var a [5]int8
+	fmt.Println("emp: ", a)
 	//
-	//a[1] = 10
-	//fmt.Println(a[1])
-	//
+	a[1] = 10
+	fmt.Println(a[1])
+
 	//fmt.Println(len(a))
 	//
 	//b := [5]int8{10, 20, 30, 40, 50}

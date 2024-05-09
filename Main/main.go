@@ -1,15 +1,12 @@
 package main
 
 import (
-	"example.com/go/practice/Concurrency"
-	"example.com/go/practice/OOP"
+	"example.com/go/practice/WinRM"
 	"fmt"
 )
 
-// global variable
-var dogsName = "rock"
-
 func main() {
+
 	//callChat()
 
 	//Basics.ForLoops()
@@ -52,7 +49,7 @@ func main() {
 
 	//FileSystem.ReadFileDemo()
 
-	OOP.ReceiverMethods()
+	//OOP.ReceiverMethods()
 
 	//OOP.InterfaceDemo()
 
@@ -82,8 +79,10 @@ func main() {
 
 	//Concurrency.SelectDemo()
 
-	Concurrency.TimerDemo()
+	//Concurrency.TimerDemo()
 
+	WinRM.WinRM()
+	//WinRM.MetricExtract()
 }
 
 func callChat() {

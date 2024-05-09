@@ -1,0 +1,297 @@
+  [
+  {
+    "metric.name": "system.network.output.queue.length",
+    "metric": "Network Queue Length",
+    "MetricCommand": "typeperf \"\\Network Interface(*)\\Output Queue Length\""
+  },
+  {
+    "metric.name": "started.time.seconds",
+    "metric": "Uptime Seconds",
+    "MetricCommand": "net stats srv"
+  },
+  {
+    "metric.name": "system.network.out.packets.per.sec",
+    "metric": "Network Out Packets Per Sec",
+    "MetricCommand": "typeperf \"\\Network Interface(*)\\Packets Outbound Per Sec\""
+  },
+  {
+    "metric.name": "system.disk.io.write.bytes.per.sec",
+    "metric": "System Disk IO Write Bytes Per Sec",
+    "MetricCommand": "typeperf \"\\LogicalDisk(*)\\Disk Write Bytes/sec\""
+  },
+  {
+    "metric.name": "system.cpu.idle.percent",
+    "metric": "CPU Idle Percent",
+    "MetricCommand": "typeperf \"\\Processor(*)\\% Idle Time\""
+  },
+  {
+    "metric.name": "system.disk.used.bytes",
+    "metric": "Disk Used Bytes",
+    "MetricCommand": "wmic logicaldisk where \"DriveType=3\" get DeviceID, FreeSpace"
+  },
+  {
+    "metric.name": "system.memory.free.percent",
+    "metric": "Memory Free Percent",
+    "MetricCommand": "typeperf \"\\Memory\\Available MBytes\""
+  },
+  {
+    "metric.name": "system.serial.number",
+    "metric": "Serial Number",
+    "MetricCommand": "wmic bios get serialnumber"
+  },
+  {
+    "metric.name": "system.logical.processors",
+    "metric": "Logical Processors",
+    "MetricCommand": "wmic cpu get NumberOfLogicalProcessors"
+  },
+  {
+    "metric.name": "system.virtual",
+    "metric": "Virtual",
+    "MetricCommand": "systeminfo | findstr /C:\"Virtualization Enabled\""
+  },
+  {
+    "metric.name": "system.cache.memory.bytes",
+    "metric": "Cache Memory Bytes",
+    "MetricCommand": "typeperf \"\\Memory\\Cache Bytes\""
+  },
+  {
+    "metric.name": "system.disk.io.time.percent",
+    "metric": "System Disk IO Time Percent",
+    "MetricCommand": "typeperf \"\\LogicalDisk(*)\\% Disk Time\""
+  },
+  {
+    "metric.name": "system.os.name",
+    "metric": "OS Name",
+    "MetricCommand": "systeminfo | findstr /C:\"OS Name\""
+  },
+  {
+    "metric.name": "system.disk.io.write.ops.per.sec",
+    "metric": "System Disk IO Write Ops Per Sec",
+    "MetricCommand": "typeperf \"\\LogicalDisk(*)\\Disk Writes/sec\""
+  },
+  {
+    "metric.name": "system.network.bytes.per.sec",
+    "metric": "Network Bytes Per Sec",
+    "MetricCommand": "typeperf \"\\Network Interface(*)\\Bytes Total/sec\""
+  },
+  {
+    "metric.name": "system.memory.used.percent",
+    "metric": "Memory Used Percent",
+    "MetricCommand": "typeperf \"\\Memory\\Committed Bytes\""
+  },
+  {
+    "metric.name": "system.model",
+    "metric": "Model",
+    "MetricCommand": "wmic computersystem get model"
+  },
+  {
+    "metric.name": "system.disk.io.bytes.per.sec",
+    "metric": "System Disk IO Bytes Per Sec",
+    "MetricCommand": "typeperf \"\\LogicalDisk(*)\\Disk Bytes/sec\""
+  },
+  {
+    "metric.name": "system.memory.available.bytes",
+    "metric": "Memory Available Bytes",
+    "MetricCommand": "typeperf \"\\Memory\\Available Bytes\""
+  },
+  {
+    "metric.name": "system.cpu.interrupt.percent",
+    "metric": "CPU Interrupt Percent",
+    "MetricCommand": "typeperf \"\\Processor(*)\\% Interrupt Time\""
+  },
+  {
+    "metric.name": "system.network.out.bytes.per.sec",
+    "metric": "Network Out Bytes Per Sec",
+    "MetricCommand": "typeperf \"\\Network Interface(*)\\Bytes Sent/sec\""
+  },
+  {
+    "metric.name": "system.memory.used.bytes",
+    "metric": "Memory Used Bytes",
+    "MetricCommand": "typeperf \"\\Memory\\Committed Bytes\""
+  },
+  {
+    "metric.name": "system.network.error.packets",
+    "metric": "Network Error Packets",
+    "MetricCommand": "typeperf \"\\Network Interface(*)\\Packets Received Errors\""
+  },
+  {
+    "metric.name": "system.cpu.description",
+    "metric": "CPU Description",
+    "MetricCommand": "wmic cpu get name"
+  },
+  {
+    "metric.name": "system.os.service.pack",
+    "metric": "OS Service Pack",
+    "MetricCommand": "wmic os get ServicePackMajorVersion,ServicePackMinorVersion"
+  },
+  {
+    "metric.name": "system.interrupts.per.sec",
+    "metric": "Interrupts Per Sec",
+    "MetricCommand": "typeperf \"\\Processor(*)\\Interrupts/sec\""
+  },
+  {
+    "metric.name": "system.memory.committed.bytes",
+    "metric": "Memory Committed Bytes",
+    "MetricCommand": "typeperf \"\\Memory\\Committed Bytes\""
+  },
+  {
+    "metric.name": "system.disk.free.percent",
+    "metric": "Disk Free Percent",
+    "MetricCommand": "typeperf \"\\LogicalDisk(*)\\% Free Space\""
+  },
+  {
+    "metric.name": "system.disk.used.percent",
+    "metric": "Disk Used Percent",
+    "MetricCommand": "typeperf \"\\LogicalDisk(*)\\% Used Space\""
+  },
+  {
+    "metric.name": "system.network.tcp.connections",
+    "metric": "Network TCP Connections",
+    "MetricCommand": "netstat -an | find /c /i \"established\""
+  },
+  {
+    "metric.name": "system.context.switches.per.sec",
+    "metric": "Context Switches Per Sec",
+    "MetricCommand": "typeperf \"\\System\\Context Switches/sec\""
+  },
+  {
+    "metric.name": "system.disk.io.read.ops.per.sec",
+    "metric": "System Disk IO Read Ops Per Sec",
+    "MetricCommand": "typeperf \"\\LogicalDisk(*)\\Disk Reads/sec\""
+  },
+  {
+    "metric.name": "system.disk.capacity.bytes",
+    "metric": "Disk Capacity Bytes",
+    "MetricCommand": "wmic logicaldisk get size,freespace"
+  },
+  {
+    "metric.name": "system.cpu.type",
+    "metric": "CPU Type",
+    "MetricCommand": "wmic cpu get caption"
+  },
+  {
+    "metric.name": "system.vendor",
+    "metric": "System Vendor",
+    "MetricCommand": "wmic computersystem get manufacturer"
+  },
+  {
+    "metric.name": "system.name",
+    "metric": "System Name",
+    "MetricCommand": "hostname"
+  },
+  {
+    "metric.name": "system.threads",
+    "metric": "Threads",
+    "MetricCommand": "typeperf \"\\System\\Thread Count\""
+  },
+  {
+    "metric.name": "system.processor.queue.length",
+    "metric": "Processor Queue Length",
+    "MetricCommand": "typeperf \"\\System\\Processor Queue Length\""
+  },
+  {
+    "metric.name": "system.disk.free.bytes",
+    "metric": "Disk Free Bytes",
+    "MetricCommand": "wmic logicaldisk where \"DriveType=3\" get DeviceID, FreeSpace"
+  },
+  {
+    "metric.name": "system.memory.installed.bytes",
+    "metric": "Memory Installed Bytes",
+    "MetricCommand": "wmic memorychip get capacity"
+  },
+  {
+    "metric.name": "system.disk.io.ops.per.sec",
+    "metric": "System Disk IO Ops Per Sec",
+    "MetricCommand": "typeperf \"\\LogicalDisk(*)\\Disk Transfers/sec\""
+  },
+  {
+    "metric.name": "system.disk.io.idle.time.percent",
+    "metric": "System Disk IO Idle Time Percent",
+    "MetricCommand": "typeperf \"\\LogicalDisk(*)\\% Idle Time\""
+  },
+  {
+    "metric.name": "system.memory.free.bytes",
+    "metric": "Memory Free Bytes",
+    "MetricCommand": "typeperf \"\\Memory\\Available Bytes\""
+  },
+  {
+    "metric.name": "system.pages.per.sec",
+    "metric": "Pages Per Sec",
+    "MetricCommand": "typeperf \"\\Memory\\Pages/sec\""
+  },
+  {
+    "metric.name": "started.time",
+    "metric": "Uptime",
+    "MetricCommand": "net stats srv"
+  },
+  {
+    "metric.name": "system.disk.io.read.bytes.per.sec",
+    "metric": "System Disk IO Read Bytes Per Sec",
+    "MetricCommand": "typeperf \"\\LogicalDisk(*)\\Disk Reads Bytes/sec\""
+  },
+  {
+    "metric.name": "system.cpu.user.percent",
+    "metric": "CPU User Percent",
+    "MetricCommand": "typeperf \"\\Processor(_Total)\\% User Time\""
+  },
+  {
+    "metric.name": "system.cpu.percent",
+    "metric": "CPU Used Percent",
+    "MetricCommand": "typeperf \"\\Processor(_Total)\\% Processor Time\""
+  },
+  {
+    "metric.name": "system.pages.faults.per.sec",
+    "metric": "Pages Faults Per Sec",
+    "MetricCommand": "typeperf \"\\Memory\\Page Faults/sec\""
+  },
+  {
+    "metric.name": "system.network.tcp.retransmissions",
+    "metric": "Network TCP Retransmissions",
+    "MetricCommand": "typeperf \"\\TCPv4\\Segments Retransmitted/sec\""
+  },
+  {
+    "metric.name": "system.os.version",
+    "metric": "OS Version",
+    "MetricCommand": "wmic os get Caption, Version"
+  },
+  {
+    "metric.name": "system.physical.processors",
+    "metric": "Physical Processors",
+    "MetricCommand": "wmic cpu get NumberOfCores"
+  },
+  {
+    "metric.name": "system.running.processes",
+    "metric": "Running Processes",
+    "MetricCommand": "tasklist /fo csv /nh | find /c /v \"\""
+  },
+  {
+    "metric.name": "system.disk.io.queue.length",
+    "metric": "System Disk IO Queue Length",
+    "MetricCommand": "typeperf \"\\PhysicalDisk(*)\\Current Disk Queue Length\""
+  },
+  {
+    "metric.name": "system.cpu.cores",
+    "metric": "CPU Cores",
+    "MetricCommand": "wmic cpu get NumberOfCores"
+  },
+  {
+    "metric.name": "system.non.paged.memory.bytes",
+    "metric": "Non Paged Memory Bytes",
+    "MetricCommand": "typeperf \"\\Memory\\Pool Nonpaged Bytes\""
+  },
+  {
+    "metric.name": "system.paged.memory.bytes",
+    "metric": "Paged Memory Bytes",
+    "MetricCommand": "typeperf \"\\Memory\\Pool Paged Bytes\""
+  },
+  {
+    "metric.name": "system.network.in.packets.per.sec",
+    "metric": "Network In Packets Per Sec",
+    "MetricCommand": "typeperf \"\\Network Interface(*)\\Packets Received/sec\""
+  },
+  {
+    "metric.name": "system.network.in.bytes.per.sec",
+    "metric": "Network In Bytes Per Sec",
+    "MetricCommand": "typeperf \"\\Network Interface(*)\\Bytes Received/sec\""
+  }
+]

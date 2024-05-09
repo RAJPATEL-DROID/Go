@@ -1,0 +1,89 @@
+[
+  {
+    "metric.name": "system.network.output.queue.length",
+    "metric": "Network Queue Length",
+    "command": "wmic /Node:@localhost /Output:STDOUT path Win32_PerfRawData_Tcpip_NetworkInterface get OutputQueueLength | findstr /r /v ^$"
+  },
+  {
+    "metric.name": "system.network.out.packets.per.sec",
+    "metric": "Network Out Packets Per Sec",
+    "command": "typeperf \"Network Interface(*)\\Packets Outbound Unicast/sec\" -sc 1 -si 3 | findstr /r /v \"^\\w\\w\\w\" | findstr /v /r \"^$\""
+  },
+  {
+    "metric.name": "system.disk.io.write.bytes.per.sec",
+    "metric": "System Disk IO Write Bytes Per Sec",
+    "command": "typeperf \"LogicalDisk(*)\\Disk Write Bytes/sec\" -sc 1 -si 3 | findstr /r /v \"^\\w\\w\\w\" | findstr /v /r \"^$\""
+  },
+  {
+    "metric.name": "system.cpu.idle.percent",
+    "metric": "CPU Idle Percent",
+    "command": "typeperf \"Processor Information(_Total)\\% Idle Time\" -sc 1 -si 3 | findstr /r /v \"^\\w\\w\\w\" | findstr /v /r \"^$\""
+  },
+  {
+    "metric.name": "system.disk.io.time.percent",
+    "metric": "System Disk IO Time Percent",
+    "command": "typeperf \"LogicalDisk(*)\\% Disk Time\" -sc 1 -si 3 | findstr /r /v \"^\\w\\w\\w\" | findstr /v /r \"^$\""
+  },
+  {
+    "metric.name": "system.disk.io.write.ops.per.sec",
+    "metric": "System Disk IO Write Ops Per Sec",
+    "command": "typeperf \"LogicalDisk(*)\\Disk Write Bytes/sec\" -sc 1 -si 3 | findstr /r /v \"^\\w\\w\\w\" | findstr /v /r \"^$\""
+  },
+  {
+    "metric.name": "system.network.bytes.per.sec",
+    "metric": "Network Bytes Per Sec",
+    "command": "typeperf \"Network Interface(*)\\Bytes Received/sec\" -sc 1 -si 3 | findstr /r /v \"^\\w\\w\\w\" | findstr /v /r \"^$\" & typeperf \"Network Interface(*)\\Bytes Sent/sec\" -sc 1 -si 3 | findstr /r /v \"^\\w\\w\\w\" | findstr /v /r \"^$\""
+  },
+  {
+    "metric.name": "system.disk.io.bytes.per.sec",
+    "metric": "System Disk IO Bytes Per Sec",
+    "command": "typeperf \"LogicalDisk(*)\\Disk Read Bytes/sec\" -sc 1 -si 3 | findstr /r /v \"^\\w\\w\\w\" | findstr /v /r \"^$\" & typeperf \"LogicalDisk(*)\\Disk Write Bytes/sec\" -sc 1 -si 3 | findstr /r /v \"^\\w\\w\\w\" | findstr /v /r \"^$\""
+  },
+  {
+    "metric.name": "system.cpu.interrupt.percent",
+    "metric": "CPU Interrupt Percent",
+    "command": "typeperf \"Processor Information(_Total)\\% Interrupt Time\" -sc 1 -si 3 | findstr /r /v \"^\\w\\w\\w\" | findstr /v /r \"^$\""
+  },
+  {
+    "metric.name": "system.network.out.bytes.per.sec",
+    "metric": "Network Out Bytes Per Sec",
+    "command": "typeperf \"Network Interface(*)\\Bytes Sent/sec\" -sc 1 -si 3 | findstr /r /v \"^\\w\\w\\w\" | findstr /v /r \"^$\""
+  },
+  {
+    "metric.name": "system.network.error.packets",
+    "metric": "Network Error Packets",
+    "command": "wmic /Node:@localhost /Output:STDOUT path Win32_PerfRawData_Tcpip_NetworkInterface get Packets/sec | findstr /r /v ^$"
+  },
+  {
+    "metric.name": "system.disk.io.read.ops.per.sec",
+    "metric": "System Disk IO Read Ops Per Sec",
+    "command": "typeperf \"LogicalDisk(*)\\Disk Read Bytes/sec\" -sc 1 -si 3 | findstr /r /v \"^\\w\\w\\w\" | findstr /v /r \"^$\""
+  },
+  {
+    "metric.name": "system.disk.io.ops.per.sec",
+    "metric": "System Disk IO Ops Per Sec",
+    "command": "typeperf \"LogicalDisk(*)\\Disk Reads/sec\" -sc 1 -si 3 | findstr /r /v \"^\\w\\w\\w\" | findstr /v /r \"^$\" & typeperf \"LogicalDisk(*)\\Disk Writes/sec\" -sc 1 -si 3 | findstr /r /v \"^\\w\\w\\w\" | findstr /v /r \"^$\""
+  },
+  {
+    "metric.name": "system.disk.io.idle.time.percent",
+    "metric": "System Disk IO Idle Time Percent",
+    "command": "typeperf \"LogicalDisk(*)\\% Idle Time\" -sc 1 -si 3 | findstr /r /v \"^\\w\\w\\w\" | findstr /v /r \"^$\""
+  },
+  {
+    "metric.name": "system.disk.io.read.bytes.per.sec",
+    "metric": "System Disk IO Read Bytes Per Sec",
+    "command": "typeperf \"LogicalDisk(*)\\Disk Read Bytes/sec\" -sc 1 -si 3 | findstr /r /v \"^\\w\\w\\w\" | findstr /v /r \"^$\""
+  },
+  {
+    "metric.name": "system.cpu.user.percent",
+    "metric": "CPU User Percent",
+    "command": "typeperf \"Processor Information(_Total)\\% User Time\" -sc 1 -si 3 | findstr /r /v \"^\\w\\w\\w\" | findstr /v /r \"^$\""
+  },
+  {
+    "metric.name": "system.cpu.percent",
+    "metric": "CPU Used Percent",
+    "command": "typeperf \"Processor Information(_Total)\\% Processor Time\" -sc 1 -si 3 | findstr /r /v \"^\\w\\w\\w\" | findstr /v /r \"^$\""
+  },
+  {
+    "metric.name": "system.pages.faults.per.sec",
+    "

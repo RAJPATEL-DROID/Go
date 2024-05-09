@@ -1,0 +1,238 @@
+[
+    {
+        "metric.name": "system.network.output.queue.length",
+        "metric": "Network Queue Length"
+    },
+    {
+        "metric.name": "started.time.seconds",
+        "metric": "Uptime Seconds"
+    },
+    {
+        "metric.name": "system.network.out.packets.per.sec",
+        "metric": "Network Out Packets Per Sec"
+    },
+    {
+        "metric.name": "system.disk.io.write.bytes.per.sec",
+        "metric": "System Disk IO Write Bytes Per Sec"
+    },
+    {
+        "metric.name": "system.cpu.idle.percent",
+        "metric": "CPU Idle Percent"
+    },
+    {
+        "metric.name": "system.disk.used.bytes",
+        "metric": "Disk Used Bytes"
+    },
+    {
+        "metric.name": "system.memory.free.percent",
+        "metric": "Memory Free Percent"
+    },
+    {
+        "metric.name": "system.serial.number",
+        "metric": "Serial Number"
+    },
+    {
+        "metric.name": "system.logical.processors",
+        "metric": "Logical Processors"
+    },
+    {
+        "metric.name": "system.virtual",
+        "metric": "Virtual"
+    },
+    {
+        "metric.name": "system.cache.memory.bytes",
+        "metric": "Cache Memory Bytes"
+    },
+    {
+        "metric.name": "system.disk.io.time.percent",
+        "metric": "System Disk IO Time Percent"
+    },
+    {
+        "metric.name": "system.os.name",
+        "metric": "OS Name"
+    },
+    {
+        "metric.name": "system.disk.io.write.ops.per.sec",
+        "metric": "System Disk IO Write Ops Per Sec"
+    },
+    {
+        "metric.name": "system.network.bytes.per.sec",
+        "metric": "Network Bytes Per Sec"
+    },
+    {
+        "metric.name": "system.memory.used.percent",
+        "metric": "Memory Used Percent"
+    },
+    {
+        "metric.name": "system.model",
+        "metric": "Model"
+    },
+    {
+        "metric.name": "system.disk.io.bytes.per.sec",
+        "metric": "System Disk IO Bytes Per Sec"
+    },
+    {
+        "metric.name": "system.memory.available.bytes",
+        "metric": "Memory Available Bytes"
+    },
+    {
+        "metric.name": "system.cpu.interrupt.percent",
+        "metric": "CPU Interrupt Percent"
+    },
+    {
+        "metric.name": "system.network.out.bytes.per.sec",
+        "metric": "Network Out Bytes Per Sec"
+    },
+    {
+        "metric.name": "system.memory.used.bytes",
+        "metric": "Memory Used Bytes"
+    },
+    {
+        "metric.name": "system.network.error.packets",
+        "metric": "Network Error Packets"
+    },
+    {
+        "metric.name": "system.cpu.description",
+        "metric": "CPU Description"
+    },
+    {
+        "metric.name": "system.os.service.pack",
+        "metric": "OS Service Pack"
+    },
+    {
+        "metric.name": "system.interrupts.per.sec",
+        "metric": "Interrupts Per Sec"
+    },
+    {
+        "metric.name": "system.memory.committed.bytes",
+        "metric": "Memory Committed Bytes"
+    },
+    {
+        "metric.name": "system.disk.free.percent",
+        "metric": "Disk Free Percent"
+    },
+    {
+        "metric.name": "system.disk.used.percent",
+        "metric": "Disk Used Percent"
+    },
+    {
+        "metric.name": "system.network.tcp.connections",
+        "metric": "Network TCP Connections"
+    },
+    {
+        "metric.name": "system.context.switches.per.sec",
+        "metric": "Context Switches Per Sec"
+    },
+    {
+        "metric.name": "system.disk.io.read.ops.per.sec",
+        "metric": "System Disk IO Read Ops Per Sec"
+    },
+    {
+        "metric.name": "system.disk.capacity.bytes",
+        "metric": "Disk Capacity Bytes"
+    },
+    {
+        "metric.name": "system.cpu.type",
+        "metric": "CPU Type"
+    },
+    {
+        "metric.name": "system.vendor",
+        "metric": "System Vendor"
+    },
+    {
+        "metric.name": "system.name",
+        "metric": "System Name"
+    },
+    {
+        "metric.name": "system.threads",
+        "metric": "Threads"
+    },
+    {
+        "metric.name": "system.processor.queue.length",
+        "metric": "Processor Queue Length"
+    },
+    {
+        "metric.name": "system.disk.free.bytes",
+        "metric": "Disk Free Bytes"
+    },
+    {
+        "metric.name": "system.memory.installed.bytes",
+        "metric": "Memory Installed Bytes"
+    },
+    {
+        "metric.name": "system.disk.io.ops.per.sec",
+        "metric": "System Disk IO Ops Per Sec"
+    },
+    {
+        "metric.name": "system.disk.io.idle.time.percent",
+        "metric": "System Disk IO Idle Time Percent"
+    },
+    {
+        "metric.name": "system.memory.free.bytes",
+        "metric": "Memory Free Bytes"
+    },
+    {
+        "metric.name": "system.pages.per.sec",
+        "metric": "Pages Per Sec"
+    },
+    {
+        "metric.name": "started.time",
+        "metric": "Uptime"
+    },
+    {
+        "metric.name": "system.disk.io.read.bytes.per.sec",
+        "metric": "System Disk IO Read Bytes Per Sec"
+    },
+    {
+        "metric.name": "system.cpu.user.percent",
+        "metric": "CPU User Percent"
+    },
+    {
+        "metric.name": "system.cpu.percent",
+        "metric": "CPU Used Percent"
+    },
+    {
+        "metric.name": "system.pages.faults.per.sec",
+        "metric": "Pages Faults Per Sec"
+    },
+    {
+        "metric.name": "system.network.tcp.retransmissions",
+        "metric": "Network TCP Retransmissions"
+    },
+    {
+        "metric.name": "system.os.version",
+        "metric": "OS Version"
+    },
+    {
+        "metric.name": "system.physical.processors",
+        "metric": "Physical Processors"
+    },
+    {
+        "metric.name": "system.running.processes",
+        "metric": "Running Processes"
+    },
+    {
+        "metric.name": "system.disk.io.queue.length",
+        "metric": "System Disk IO Queue Length"
+    },
+    {
+        "metric.name": "system.cpu.cores",
+        "metric": "CPU Cores"
+    },
+    {
+        "metric.name": "system.non.paged.memory.bytes",
+        "metric": "Non Paged Memory Bytes"
+    },
+    {
+        "metric.name": "system.paged.memory.bytes",
+        "metric": "Paged Memory Bytes"
+    },
+    {
+        "metric.name": "system.network.in.packets.per.sec",
+        "metric": "Network In Packets Per Sec"
+    },
+    {
+        "metric.name": "system.network.in.bytes.per.sec",
+        "metric": "Network In Bytes Per Sec"
+    }
+]
